@@ -1,0 +1,39 @@
+:root{
+
+    
+/* color footer */
+
+--background-footer:#000000ee;
+
+--color-footer: #fff;
+--color-footer-hover:#bebebe;
+}
+.link-contact:hover{
+    transition: all 250ms;
+    color: var(--color-footer-hover );
+}
+
+.footer p, .footer address, .footer p a{
+    background: transparent;
+    color: var(--color-footer);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: var(--background-footer);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+@media screen  and (max-width: 1400px){
+
+    .footer{
+        display: flex;
+        flex-direction: column; /*element a la suite des autres*/
+    }
+    .google-maps{width: auto;/*pour que l'iframe ne deborde pas de son parent*/}
+    
+}
